@@ -1,0 +1,4 @@
+node_modules
+src
+*.sublime-project
+package-lock.json
