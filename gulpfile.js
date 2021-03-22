@@ -108,7 +108,7 @@ function img() {
     .pipe(dest(destinations.img));
 }
 
-// task('deploy', () => src('src/**/*').pipe(ghPages()));
+task('deploy', () => src('./build/**/*').pipe(ghPages()));
 
 exports.stylusToCSS = stylusToCSS;
 exports.img = img;
