@@ -108,7 +108,7 @@ function img() {
     .pipe(dest(destinations.img));
 }
 
-task('deploy', () => src('./build/**/*').pipe(ghPages()));
+task('deploy', () => src('./build/**/*').pipe(ghPages({ branch: 'main' })));
 
 exports.stylusToCSS = stylusToCSS;
 exports.img = img;
